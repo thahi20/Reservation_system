@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" %>
 <%@ page import="model.Bill" %>
 <%@ page import="model.Reservation" %>
+
+<!--generate bills-->
 <!doctype html>
 <html>
 <head>
@@ -34,6 +36,7 @@
         </div>
       </form>
 
+      <!--display error messages-->
       <div class="notice error">
         <%
           Object err = request.getAttribute("error");
